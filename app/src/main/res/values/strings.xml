@@ -2,12 +2,11 @@
     <string name="app_name">My Application</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Henrico Prevention Services</string>
-    <string name="nav_header_subtitle">example@exmaple.com</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Resources</string>
+    <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Page 1</string>
-    <string name="menu_gallery">Page 2</string>
-    <string name="menu_slideshow">Page 3</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_page2">Page 2</string>
 </resources>
