@@ -13,7 +13,12 @@
     <fragment
         android:id="@+id/nav_page2"
         android:name="com.example.myapplication.ui.page_2.Page2Fragment"
-        android:label="Page2Fragment"
-        tools:layout="@layout/fragment_page2"/>
+        android:label="@string/menu_page2"
+        tools:layout="@layout/fragment_page2" />
+    <fragment
+        android:id="@+id/nav_page3"
+        android:name="com.example.myapplication.ui.page_3.Page3Fragment"
+        android:label="@string/menu_page3"
+        tools:layout="@layout/fragment_page3" />
 
 </navigation>

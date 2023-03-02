@@ -1,9 +1,16 @@
 package com.example.myapplication;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.SyncStateContract;
 import android.view.View;
 import android.view.Menu;
+import android.widget.AdapterView;
+import android.widget.GridView;
 
+import com.example.myapplication.ui.page_2.IActivity;
+import com.example.myapplication.ui.page_2.ImageAdapter;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -24,6 +31,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        GridView gridView = (GridView) findViewById(R.id.grid1);
+        gridView.setAdapter(new ImageAdapter(this));
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               Intent i = new Intent(getApplicationContext(), IActivity.class);
+               i.putExtra("id",position);
+               startActivity(i);
+           }
+        });
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -32,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:804-727-8053"));
+                startActivity(callIntent);
+//                https://stackoverflow.com/questions/60860582/opening-phone-apps-through-button
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -41,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_page2)
+                R.id.nav_home, R.id.nav_page2, R.id.nav_page3)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

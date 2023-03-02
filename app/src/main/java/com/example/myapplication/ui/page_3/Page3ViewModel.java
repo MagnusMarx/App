@@ -1,22 +1,15 @@
-package com.example.myapplication.ui.page_2;
-
-import android.widget.GridView;
+package com.example.myapplication.ui.page_3;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class Page2ViewModel extends ViewModel {
-
+public class Page3ViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public Page2ViewModel(){
+    public Page3ViewModel() {
         mText = new MutableLiveData<>();
-
-// manipulate string data from Java
-//        mText.setValue("Adam Amir");
     }
-
     public LiveData<String> getText() {
         return mText;
     }

@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.home;
+package com.example.myapplication.ui.page_3;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,20 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.myapplication.databinding.FragmentHomeBinding;
-
-public class HomeFragment extends Fragment {
-    private FragmentHomeBinding binding;
+import com.example.myapplication.databinding.FragmentPage3Binding;
+public class Page3Fragment extends Fragment {
+    private FragmentPage3Binding binding;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        Page3ViewModel page3ViewModel =
+                new ViewModelProvider(this).get(Page3ViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentPage3Binding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textPage3;
+        page3ViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
