@@ -2,18 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/page2"
+    android:id="@+id/page5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.page_2.Page2Fragment">
+    tools:context=".ui.page_5.Page5Fragment">
 
     <TextView
-        android:id="@+id/text_page2"
+        android:id="@+id/text_page5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/desc_txt1_wellness"
+        android:text="@string/desc_txt1_community"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

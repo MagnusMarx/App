@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.page_2;
+package com.example.myapplication.ui.page_5;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,19 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.myapplication.databinding.FragmentPage2Binding;
-public class Page2Fragment extends Fragment {
-    private FragmentPage2Binding binding;
+import com.example.myapplication.databinding.FragmentPage5Binding;
+public class Page5Fragment extends Fragment {
+    private FragmentPage5Binding binding;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        Page2ViewModel page2ViewModel =
-                new ViewModelProvider(this).get(Page2ViewModel.class);
+        Page5ViewModel page5ViewModel =
+                new ViewModelProvider(this).get(Page5ViewModel.class);
 
-        binding = FragmentPage2Binding.inflate(inflater, container, false);
+        binding = FragmentPage5Binding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textPage2;
-        page2ViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textPage5;
+        page5ViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

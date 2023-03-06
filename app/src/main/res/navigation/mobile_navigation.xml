@@ -20,5 +20,14 @@
         android:name="com.example.myapplication.ui.page_3.Page3Fragment"
         android:label="@string/menu_page3"
         tools:layout="@layout/fragment_page3" />
-
+    <fragment
+        android:id="@+id/nav_page4"
+        android:name="com.example.myapplication.ui.page_4.Page4Fragment"
+        android:label="@string/menu_page4"
+        tools:layout="@layout/fragment_page4" />
+    <fragment
+        android:id="@+id/nav_page5"
+        android:name="com.example.myapplication.ui.page_5.Page5Fragment"
+        android:label="@string/menu_page5"
+        tools:layout="@layout/fragment_page5" />
 </navigation>

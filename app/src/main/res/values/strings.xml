@@ -16,5 +16,7 @@
     <string name="desc_txt1_home">Our goal at Henrico Area Prevention Services is to promote health and wellness.  Henrico Area Prevention Services supports individuals, family, and community strengths by reducing the influence of risk factors and increasing protective factors.  Addressing risks and building upon the strengths of youth, families, and communities averts the need for more costly substance use and mental health treatment services.</string>
     <string name="desc_txt1_wellness">This is the Wellness page</string>
     <string name="desc_txt1_youth">This is the Youth Leadership page</string>
+    <string name="desc_txt1_resources">This is the Resources page</string>
+    <string name="desc_txt1_community">This is the Community Service Partners page</string>
 
 </resources>

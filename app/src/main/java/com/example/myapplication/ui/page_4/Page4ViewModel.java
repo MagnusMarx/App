@@ -1,20 +1,15 @@
-package com.example.myapplication.ui.page_2;
+package com.example.myapplication.ui.page_4;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class Page2ViewModel extends ViewModel {
-
+public class Page4ViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public Page2ViewModel(){
+    public Page4ViewModel() {
         mText = new MutableLiveData<>();
-
-// manipulate string data from Java
-//        mText.setValue("Adam Amir");
     }
-
     public LiveData<String> getText() {
         return mText;
     }

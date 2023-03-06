@@ -9,8 +9,8 @@ import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.example.myapplication.ui.page_2.IActivity;
-import com.example.myapplication.ui.page_2.ImageAdapter;
+//import com.example.myapplication.ui.page_2.IActivity;
+//import com.example.myapplication.ui.page_2.ImageAdapter;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -31,18 +31,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        GridView gridView = (GridView) findViewById(R.id.grid1);
-        gridView.setAdapter(new ImageAdapter(this));
-
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               Intent i = new Intent(getApplicationContext(), IActivity.class);
-               i.putExtra("id",position);
-               startActivity(i);
-           }
-        });
+//        setContentView(R.layout.activity_main);
+//
+//        GridView gridView = (GridView) findViewById(R.id.grid1);
+//        gridView.setAdapter(new ImageAdapter(this));
+//
+//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//               Intent i = new Intent(getApplicationContext(), IActivity.class);
+//               i.putExtra("id",position);
+//               startActivity(i);
+//           }
+//        });
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
