@@ -8,13 +8,153 @@
     tools:context=".ui.page_3.Page3Fragment">
 
     <TextView
-        android:id="@+id/text_page3"
+        android:id="@+id/page3_header1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/menu_page3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/page3_txt1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="9dp"
         android:text="@string/desc_txt1_youth"
+        app:layout_constraintBottom_toTopOf="@+id/page3_txt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page3_header1" />
+
+    <TextView
+        android:id="@+id/page3_txt2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="143dp"
+        android:text="@string/desc_txt2_youth"
+        app:layout_constraintBottom_toBottomOf="@+id/page3_header2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/page3_txt3"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/desc_txt3_youth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/page3_header2"
+        android:layout_width="172dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/page3_header2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/page3_txt4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page3_txt3" />
+
+    <TextView
+        android:id="@+id/page3_bulletpt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="51dp"
+        android:text="•"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/page3_bulletpt3"
+        app:layout_constraintStart_toStartOf="@+id/page3_header2" />
+
+    <TextView
+        android:id="@+id/page3_txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/page3_bullet1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/page3_bulletpt3"
+        app:layout_constraintTop_toTopOf="@+id/page3_bulletpt3" />
+
+    <TextView
+        android:id="@+id/page3_bulletpt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="•"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/page3_bulletpt1"
+        app:layout_constraintTop_toBottomOf="@+id/page3_bulletpt1" />
+
+    <TextView
+        android:id="@+id/page3_bulletpt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="•"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/page3_txt7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page3_bulletpt3" />
+
+    <TextView
+        android:id="@+id/page3_txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/page3_bullet1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/page3_bulletpt1"
+        app:layout_constraintTop_toTopOf="@+id/page3_bulletpt1" />
+
+    <TextView
+        android:id="@+id/page3_bulletpt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:text="•"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/page3_bulletpt4" />
+
+    <TextView
+        android:id="@+id/page3_txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/page3_bullet2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/page3_bulletpt2"
+        app:layout_constraintTop_toTopOf="@+id/page3_bulletpt2" />
+
+    <TextView
+        android:id="@+id/page3_txt7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/page3_bullet4"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page3_bulletpt4"
+        app:layout_constraintTop_toTopOf="@+id/page3_bulletpt4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

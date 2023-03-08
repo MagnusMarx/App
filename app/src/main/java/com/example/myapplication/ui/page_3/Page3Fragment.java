@@ -21,7 +21,7 @@ public class Page3Fragment extends Fragment {
         binding = FragmentPage3Binding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textPage3;
+        final TextView textView = binding.page3Header1;
         page3ViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

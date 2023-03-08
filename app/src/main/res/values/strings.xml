@@ -7,6 +7,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="bulletpt">•</string>
+
     <string name="menu_home">Home</string>
     <string name="menu_page2">Wellness</string>
     <string name="menu_page3">Youth Leadership</string>
@@ -14,9 +16,22 @@
     <string name="menu_page5">Community Service Partners</string>
 
     <string name="desc_txt1_home">Our goal at Henrico Area Prevention Services is to promote health and wellness.  Henrico Area Prevention Services supports individuals, family, and community strengths by reducing the influence of risk factors and increasing protective factors.  Addressing risks and building upon the strengths of youth, families, and communities averts the need for more costly substance use and mental health treatment services.</string>
+
     <string name="desc_txt1_wellness">This is the Wellness page</string>
-    <string name="desc_txt1_youth">This is the Youth Leadership page</string>
+
+    <string name="desc_txt1_youth">As Henrico Youth, we are the voice of the newest generation and we are empowered to improve the world with the help of our community friends and partners.</string>
+    <string name="desc_txt2_youth">The Youth Leadership Program won a National Association of Counties (NACo) award in 2020 for innovative programs and initiatives. It is a community-based program that focuses on building character, social skills, and civic responsibility. The goal of the program is to bolster youth’s success through adolescence and adulthood by strengthening leadership skills and job training. Youth Ambassadors, primarily Henrico County high school youth, develop leadership competencies that position them to promote positive change in their communities.</string>
+    <string name="desc_txt3_youth">Come and join the Henrico Youth Leaders movement! To find out more information, please click the call button in the bottom right corner.</string>
+    <string name="page3_bullet1">Peer Educators</string>
+    <string name="page3_bullet2">Volunteering</string>
+    <string name="page3_bullet3">Advocacy</string>
+    <string name="page3_bullet4">Social Media Campaigns, to debunk myths and bring awareness to risk factors</string>
+    
+    
+    <string name="page3_header2">How We Promote Health &amp; Wellness</string>
+
     <string name="desc_txt1_resources">This is the Resources page</string>
+
     <string name="desc_txt1_community">This is the Community Service Partners page</string>
 
 </resources>
